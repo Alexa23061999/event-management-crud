@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,18 +35,18 @@ export default function RootLayout({
             </div>
             
             <nav className="flex items-center space-x-2">
-              <a 
+              <Link 
                 href="/events" 
                 className="px-4 py-2 rounded-full text-gray-700 hover:text-gray-900 hover:bg-white/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
               >
                 Events
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/create" 
                 className="px-6 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Create Event
-              </a>
+              </Link>
             </nav>
           </div>
         </header>
